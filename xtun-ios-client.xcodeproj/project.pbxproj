@@ -7,18 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87F64C302A910E5A00A87DF6 /* xtun_ios_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C2F2A910E5A00A87DF6 /* xtun_ios_clientApp.swift */; };
-		87F64C322A910E5A00A87DF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C312A910E5A00A87DF6 /* ContentView.swift */; };
+		8702B8D42AA7FF8300602855 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702B8D32AA7FF8300602855 /* UserAgent.swift */; };
+		8702B8D62AA805E200602855 /* UserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702B8D52AA805E200602855 /* UserAgent.swift */; };
+		871121802A98E3E300CACC45 /* TunnelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8711217F2A98E3E300CACC45 /* TunnelViewModel.swift */; };
+		871121842A99010000CACC45 /* NEVPNStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871121832A99010000CACC45 /* NEVPNStatus.swift */; };
+		871121872A99016C00CACC45 /* XTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871121862A99016C00CACC45 /* XTError.swift */; };
+		8724F77A2A95953D0060EB3A /* VPNToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724F7792A95953D0060EB3A /* VPNToggleView.swift */; };
+		8724F77C2A95A8940060EB3A /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724F77B2A95A8940060EB3A /* ActivityIndicatorView.swift */; };
+		873772762A97A5EC00955DED /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873772752A97A5EB00955DED /* LogService.swift */; };
+		873772782A97A67500955DED /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873772772A97A67500955DED /* LogsView.swift */; };
+		873F3B9C2A951C52005151EA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F3B9B2A951C52005151EA /* UserDefaults.swift */; };
+		873F3B9E2A951E73005151EA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F3B9D2A951E73005151EA /* UserDefaults.swift */; };
+		8769F3FA2A93F53500C69038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769F3F92A93F53500C69038 /* ContentView.swift */; };
+		878E48A62AC386D200C3E620 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 878E48A52AC386D200C3E620 /* .gitignore */; };
+		87A695542A96A16B00BF6DE1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A695532A96A16B00BF6DE1 /* Color.swift */; };
+		87AE70192A9256AE001162B6 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE70182A9256AE001162B6 /* Transport.swift */; };
+		87AE701B2A9275A9001162B6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE701A2A9275A9001162B6 /* Logger.swift */; };
+		87EE44B72A9A4BC1008ACE3A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EE44B62A9A4BC1008ACE3A /* KeychainService.swift */; };
+		87F64C302A910E5A00A87DF6 /* xtunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C2F2A910E5A00A87DF6 /* xtunApp.swift */; };
 		87F64C342A910E5C00A87DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F64C332A910E5C00A87DF6 /* Assets.xcassets */; };
 		87F64C372A910E5C00A87DF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F64C362A910E5C00A87DF6 /* Preview Assets.xcassets */; };
+		87F64C3F2A910FC700A87DF6 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C3E2A910FC700A87DF6 /* AppConfig.swift */; };
+		87F64C412A91102100A87DF6 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C402A91102100A87DF6 /* NetworkConfig.swift */; };
+		87F64C442A91105A00A87DF6 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C432A91105A00A87DF6 /* FileManagerHelper.swift */; };
+		87F64C482A91110000A87DF6 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C472A91110000A87DF6 /* BackgroundView.swift */; };
+		87F64C4A2A91112800A87DF6 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C492A91112800A87DF6 /* MainMenuView.swift */; };
+		87F64C4C2A91117D00A87DF6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C4B2A91117D00A87DF6 /* OnboardingView.swift */; };
+		87F64C4E2A91119700A87DF6 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C4D2A91119700A87DF6 /* SetupView.swift */; };
+		87F64C502A9111C000A87DF6 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C4F2A9111C000A87DF6 /* ConnectView.swift */; };
+		87F64C532A9115C400A87DF6 /* TunnelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C522A9115C400A87DF6 /* TunnelService.swift */; };
+		87F64C5B2A912DCC00A87DF6 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F64C5A2A912DCC00A87DF6 /* NetworkExtension.framework */; };
+		87F64C5E2A912DCC00A87DF6 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F64C5D2A912DCC00A87DF6 /* PacketTunnelProvider.swift */; };
+		87F64C632A912DCC00A87DF6 /* tunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87F64C582A912DCC00A87DF6 /* tunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		87F64C612A912DCC00A87DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F64C242A910E5900A87DF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F64C572A912DCC00A87DF6;
+			remoteInfo = tunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87C1E3092A92958E00D276CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F64C672A912DCC00A87DF6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87F64C632A912DCC00A87DF6 /* tunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8702B8D32AA7FF8300602855 /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserAgent.swift; path = tunnel/Sources/UserAgent.swift; sourceTree = SOURCE_ROOT; };
+		8702B8D52AA805E200602855 /* UserAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgent.swift; sourceTree = "<group>"; };
+		8711217F2A98E3E300CACC45 /* TunnelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelViewModel.swift; sourceTree = "<group>"; };
+		871121832A99010000CACC45 /* NEVPNStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEVPNStatus.swift; sourceTree = "<group>"; };
+		871121862A99016C00CACC45 /* XTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTError.swift; sourceTree = "<group>"; };
+		8724F7792A95953D0060EB3A /* VPNToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNToggleView.swift; sourceTree = "<group>"; };
+		8724F77B2A95A8940060EB3A /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		873772752A97A5EB00955DED /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		873772772A97A67500955DED /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		873F3B9B2A951C52005151EA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		873F3B9D2A951E73005151EA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		8769F3F92A93F53500C69038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		878E48A52AC386D200C3E620 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		87A695532A96A16B00BF6DE1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		87AE70182A9256AE001162B6 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		87AE701A2A9275A9001162B6 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		87EE44B62A9A4BC1008ACE3A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		87F64C2C2A910E5A00A87DF6 /* xtun-ios-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xtun-ios-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87F64C2F2A910E5A00A87DF6 /* xtun_ios_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xtun_ios_clientApp.swift; sourceTree = "<group>"; };
-		87F64C312A910E5A00A87DF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		87F64C2F2A910E5A00A87DF6 /* xtunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xtunApp.swift; sourceTree = "<group>"; };
 		87F64C332A910E5C00A87DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87F64C362A910E5C00A87DF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87F64C3E2A910FC700A87DF6 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		87F64C402A91102100A87DF6 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		87F64C432A91105A00A87DF6 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		87F64C472A91110000A87DF6 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		87F64C492A91112800A87DF6 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		87F64C4B2A91117D00A87DF6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		87F64C4D2A91119700A87DF6 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		87F64C4F2A9111C000A87DF6 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		87F64C512A91147E00A87DF6 /* xtun-ios-client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "xtun-ios-client.entitlements"; sourceTree = "<group>"; };
+		87F64C522A9115C400A87DF6 /* TunnelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelService.swift; sourceTree = "<group>"; };
+		87F64C582A912DCC00A87DF6 /* tunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F64C5A2A912DCC00A87DF6 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		87F64C5D2A912DCC00A87DF6 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		87F64C5F2A912DCC00A87DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F64C602A912DCC00A87DF6 /* tunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tunnel.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,13 +122,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87F64C552A912DCC00A87DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F64C5B2A912DCC00A87DF6 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8709A2D22A92F1AC006C09B7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				87665A0D2A978F060013EFAF /* Extensions */,
+				87F64C5D2A912DCC00A87DF6 /* PacketTunnelProvider.swift */,
+				87AE70182A9256AE001162B6 /* Transport.swift */,
+				8702B8D32AA7FF8300602855 /* UserAgent.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8711217C2A98DC8600CACC45 /* ConnectView */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C4F2A9111C000A87DF6 /* ConnectView.swift */,
+				8724F7792A95953D0060EB3A /* VPNToggleView.swift */,
+			);
+			path = ConnectView;
+			sourceTree = "<group>";
+		};
+		8711217D2A98E26A00CACC45 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C432A91105A00A87DF6 /* FileManagerHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8711217E2A98E3A600CACC45 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8711217F2A98E3E300CACC45 /* TunnelViewModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		871121852A99014200CACC45 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				871121862A99016C00CACC45 /* XTError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		87665A0D2A978F060013EFAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				873F3B9B2A951C52005151EA /* UserDefaults.swift */,
+				87AE701A2A9275A9001162B6 /* Logger.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87A695522A96A12900BF6DE1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				873F3B9D2A951E73005151EA /* UserDefaults.swift */,
+				87A695532A96A16B00BF6DE1 /* Color.swift */,
+				871121832A99010000CACC45 /* NEVPNStatus.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		87F64C232A910E5900A87DF6 = {
 			isa = PBXGroup;
 			children = (
+				878E48A52AC386D200C3E620 /* .gitignore */,
 				87F64C2E2A910E5A00A87DF6 /* xtun-ios-client */,
+				87F64C5C2A912DCC00A87DF6 /* tunnel */,
+				87F64C592A912DCC00A87DF6 /* Frameworks */,
 				87F64C2D2A910E5A00A87DF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				87F64C2C2A910E5A00A87DF6 /* xtun-ios-client.app */,
+				87F64C582A912DCC00A87DF6 /* tunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +219,16 @@
 		87F64C2E2A910E5A00A87DF6 /* xtun-ios-client */ = {
 			isa = PBXGroup;
 			children = (
-				87F64C2F2A910E5A00A87DF6 /* xtun_ios_clientApp.swift */,
-				87F64C312A910E5A00A87DF6 /* ContentView.swift */,
+				87F64C3D2A910F7D00A87DF6 /* Config */,
+				8711217E2A98E3A600CACC45 /* Data */,
+				871121852A99014200CACC45 /* Errors */,
+				87A695522A96A12900BF6DE1 /* Extensions */,
+				87F64C452A91108D00A87DF6 /* Views */,
+				87F64C422A91103500A87DF6 /* Services */,
+				8711217D2A98E26A00CACC45 /* Utilities */,
+				87F64C2F2A910E5A00A87DF6 /* xtunApp.swift */,
+				87F64C512A91147E00A87DF6 /* xtun-ios-client.entitlements */,
+				8769F3F92A93F53500C69038 /* ContentView.swift */,
 				87F64C332A910E5C00A87DF6 /* Assets.xcassets */,
 				87F64C352A910E5C00A87DF6 /* Preview Content */,
 			);
@@ -67,6 +243,66 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		87F64C3D2A910F7D00A87DF6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C3E2A910FC700A87DF6 /* AppConfig.swift */,
+				87F64C402A91102100A87DF6 /* NetworkConfig.swift */,
+				8702B8D52AA805E200602855 /* UserAgent.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		87F64C422A91103500A87DF6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C522A9115C400A87DF6 /* TunnelService.swift */,
+				873772752A97A5EB00955DED /* LogService.swift */,
+				87EE44B62A9A4BC1008ACE3A /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		87F64C452A91108D00A87DF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C462A9110AF00A87DF6 /* Shared */,
+				8711217C2A98DC8600CACC45 /* ConnectView */,
+				87F64C4B2A91117D00A87DF6 /* OnboardingView.swift */,
+				87F64C4D2A91119700A87DF6 /* SetupView.swift */,
+				873772772A97A67500955DED /* LogsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87F64C462A9110AF00A87DF6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C472A91110000A87DF6 /* BackgroundView.swift */,
+				87F64C492A91112800A87DF6 /* MainMenuView.swift */,
+				8724F77B2A95A8940060EB3A /* ActivityIndicatorView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		87F64C592A912DCC00A87DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F64C5A2A912DCC00A87DF6 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87F64C5C2A912DCC00A87DF6 /* tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				8709A2D22A92F1AC006C09B7 /* Sources */,
+				87F64C5F2A912DCC00A87DF6 /* Info.plist */,
+				87F64C602A912DCC00A87DF6 /* tunnel.entitlements */,
+			);
+			path = tunnel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +313,35 @@
 				87F64C282A910E5A00A87DF6 /* Sources */,
 				87F64C292A910E5A00A87DF6 /* Frameworks */,
 				87F64C2A2A910E5A00A87DF6 /* Resources */,
+				87F64C672A912DCC00A87DF6 /* Embed Foundation Extensions */,
+				87C1E3092A92958E00D276CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				87F64C622A912DCC00A87DF6 /* PBXTargetDependency */,
 			);
 			name = "xtun-ios-client";
 			productName = "xtun-ios-client";
 			productReference = 87F64C2C2A910E5A00A87DF6 /* xtun-ios-client.app */;
 			productType = "com.apple.product-type.application";
+		};
+		87F64C572A912DCC00A87DF6 /* tunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F64C642A912DCC00A87DF6 /* Build configuration list for PBXNativeTarget "tunnel" */;
+			buildPhases = (
+				87F64C542A912DCC00A87DF6 /* Sources */,
+				87F64C552A912DCC00A87DF6 /* Frameworks */,
+				87F64C562A912DCC00A87DF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tunnel;
+			productName = tunnel;
+			productReference = 87F64C582A912DCC00A87DF6 /* tunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +354,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					87F64C2B2A910E5A00A87DF6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					87F64C572A912DCC00A87DF6 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -116,6 +375,7 @@
 			projectRoot = "";
 			targets = (
 				87F64C2B2A910E5A00A87DF6 /* xtun-ios-client */,
+				87F64C572A912DCC00A87DF6 /* tunnel */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +386,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F64C372A910E5C00A87DF6 /* Preview Assets.xcassets in Resources */,
+				878E48A62AC386D200C3E620 /* .gitignore in Resources */,
 				87F64C342A910E5C00A87DF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F64C562A912DCC00A87DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +405,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F64C322A910E5A00A87DF6 /* ContentView.swift in Sources */,
-				87F64C302A910E5A00A87DF6 /* xtun_ios_clientApp.swift in Sources */,
+				87F64C442A91105A00A87DF6 /* FileManagerHelper.swift in Sources */,
+				8769F3FA2A93F53500C69038 /* ContentView.swift in Sources */,
+				87F64C3F2A910FC700A87DF6 /* AppConfig.swift in Sources */,
+				87F64C4A2A91112800A87DF6 /* MainMenuView.swift in Sources */,
+				8724F77C2A95A8940060EB3A /* ActivityIndicatorView.swift in Sources */,
+				87F64C502A9111C000A87DF6 /* ConnectView.swift in Sources */,
+				87F64C4C2A91117D00A87DF6 /* OnboardingView.swift in Sources */,
+				8724F77A2A95953D0060EB3A /* VPNToggleView.swift in Sources */,
+				873772782A97A67500955DED /* LogsView.swift in Sources */,
+				873772762A97A5EC00955DED /* LogService.swift in Sources */,
+				87A695542A96A16B00BF6DE1 /* Color.swift in Sources */,
+				87EE44B72A9A4BC1008ACE3A /* KeychainService.swift in Sources */,
+				87F64C412A91102100A87DF6 /* NetworkConfig.swift in Sources */,
+				87F64C532A9115C400A87DF6 /* TunnelService.swift in Sources */,
+				87F64C302A910E5A00A87DF6 /* xtunApp.swift in Sources */,
+				871121872A99016C00CACC45 /* XTError.swift in Sources */,
+				8702B8D62AA805E200602855 /* UserAgent.swift in Sources */,
+				871121842A99010000CACC45 /* NEVPNStatus.swift in Sources */,
+				87F64C4E2A91119700A87DF6 /* SetupView.swift in Sources */,
+				871121802A98E3E300CACC45 /* TunnelViewModel.swift in Sources */,
+				873F3B9E2A951E73005151EA /* UserDefaults.swift in Sources */,
+				87F64C482A91110000A87DF6 /* BackgroundView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F64C542A912DCC00A87DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F64C5E2A912DCC00A87DF6 /* PacketTunnelProvider.swift in Sources */,
+				87AE701B2A9275A9001162B6 /* Logger.swift in Sources */,
+				873F3B9C2A951C52005151EA /* UserDefaults.swift in Sources */,
+				87AE70192A9256AE001162B6 /* Transport.swift in Sources */,
+				8702B8D42AA7FF8300602855 /* UserAgent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87F64C622A912DCC00A87DF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F64C572A912DCC00A87DF6 /* tunnel */;
+			targetProxy = 87F64C612A912DCC00A87DF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		87F64C382A910E5C00A87DF6 /* Debug */ = {
@@ -262,19 +570,23 @@
 		87F64C3B2A910E5C00A87DF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "xtun-ios-client/xtun-ios-client.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"xtun-ios-client/Preview Content\"";
 				DEVELOPMENT_TEAM = 6F7898P49G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = xtun;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,19 +603,23 @@
 		87F64C3C2A910E5C00A87DF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "xtun-ios-client/xtun-ios-client.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"xtun-ios-client/Preview Content\"";
 				DEVELOPMENT_TEAM = 6F7898P49G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = xtun;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +627,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xorgal.xtun-ios-client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87F64C652A912DCC00A87DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tunnel/tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6F7898P49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xorgal.xtun-ios-client.tunnel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87F64C662A912DCC00A87DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tunnel/tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6F7898P49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.xorgal.xtun-ios-client.tunnel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +702,15 @@
 			buildConfigurations = (
 				87F64C3B2A910E5C00A87DF6 /* Debug */,
 				87F64C3C2A910E5C00A87DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F64C642A912DCC00A87DF6 /* Build configuration list for PBXNativeTarget "tunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F64C652A912DCC00A87DF6 /* Debug */,
+				87F64C662A912DCC00A87DF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

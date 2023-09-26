@@ -8,19 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var currentView: CurrentView = appConfig.initialized ? .connectView : .onboardingView
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            BackgroundView()
+
+            VStack {
+                if appConfig.initialized {
+                    HStack {
+                        MainMenuView(currentView: $currentView)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 20)
+                    Spacer()
+                }
+
+                switch currentView {
+                case .onboardingView:
+                    OnboardingView(currentView: $currentView)
+                case .connectView:
+                    ConnectView(currentView: $currentView)
+                case .setupView:
+                    SetupView(currentView: $currentView)
+                case .logsView:
+                    LogsView()
+                }
+
+                Spacer()
+
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        @StateObject var model = TunnelViewModel()
+        ContentView().environmentObject(model)
     }
 }
